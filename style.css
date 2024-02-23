@@ -78,3 +78,73 @@ form button:hover {
 form .textarea-field .error-txt {
   margin-top: -10px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: papayawhip;
+}
+
+.contact h2 {
+  font-size: 8vw; /* Responsive font size */
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact form {
+  width: 100%; /* Responsive width */
+  max-width: 600px; /* Maximum width */
+  text-align: center;
+}
+
+form .input-box {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  width: 48%; /* Adjust width for smaller screens */
+  margin-bottom: 10px;
+}
+
+.field .item {
+  width: 100%;
+  padding: 1.5em; /* Responsive padding */
+  background: white;
+  border: 2px solid greenyellow;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.5vw; /* Responsive font size */
+  color: black;
+  margin-bottom: 1em; /* Adjust margin for smaller screens */
+}
+
+form button {
+  padding: 1em 2em; /* Responsive padding */
+  font-size: 1.5vw; /* Responsive font size */
+  margin-top: 2em; /* Adjust margin for smaller screens */
+}
+
+.field .error-txt {
+  font-size: 1vw; /* Responsive font size */
+  margin-top: -0.5em; /* Adjust margin for smaller screens */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .input-box .input-field {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
